@@ -1,16 +1,28 @@
-## Hi there 👋
+<picture>
+  <source
+    media="(prefers-color-scheme: dark)"
+    srcset="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/img2.png"
+  />
+  <source
+    media="(prefers-color-scheme: light)"
+    srcset="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/img1.png"
+  />
+  <img
+    alt="new-tonAA profile"
+    src="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/img1.png"
+  />
+</picture>
 
-<!--
-**new-tonAA/new-tonAA** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
-Here are some ideas to get you started:
+<br>
+<br>
 
-- 🔭 I’m currently working on ...
-- 🌱 I’m currently learning ...
-- 👯 I’m looking to collaborate on ...
-- 🤔 I’m looking for help with ...
-- 💬 Ask me about ...
-- 📫 How to reach me: ...
-- 😄 Pronouns: ...
-- ⚡ Fun fact: ...
--->
+
+**I am a...**
+
+- Software Engineering undergraduate student at **South China University of Technology**
+- Undergraduate researcher interested in **Computer Vision and Multimodal AI**
+- Game developer exploring **Game Development and Real-Time Rendering**
+
+
+<br>
