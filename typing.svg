@@ -1,14 +1,11 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="40" viewBox="0 0 520 40">
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="30" viewBox="0 0 520 30">
   <style>
-    .type {
+    .char {
       font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
       font-size: 20px;
       font-weight: 600;
       fill: #24292f;
-      overflow: hidden;
-      white-space: nowrap;
-      width: 0;
-      animation: typing 2.5s steps(20, end) infinite;
+      opacity: 0;
     }
     .cursor {
       font-family: monospace;
@@ -16,19 +13,44 @@
       fill: #24292f;
       animation: blink 1s step-end infinite;
     }
-    @keyframes typing {
-      0%   { width: 0; }
-      50%  { width: 200px; }
-      100% { width: 200px; }
+
+    .c1  { animation: show 8s infinite; animation-delay: 0.0s; }
+    .c2  { animation: show 8s infinite; animation-delay: 0.3s; }
+    .c3  { animation: show 8s infinite; animation-delay: 0.6s; }
+    .c4  { animation: show 8s infinite; animation-delay: 0.9s; }
+    .c5  { animation: show 8s infinite; animation-delay: 1.2s; }
+    .c6  { animation: show 8s infinite; animation-delay: 1.5s; }
+    .c7  { animation: show 8s infinite; animation-delay: 1.8s; }
+    .c8  { animation: show 8s infinite; animation-delay: 2.1s; }
+    .c9  { animation: show 8s infinite; animation-delay: 2.4s; }
+
+    @keyframes show {
+      0%      { opacity: 0; }
+      5%      { opacity: 1; }
+      40%     { opacity: 1; }
+      45%     { opacity: 0; }
+      100%    { opacity: 0; }
     }
+
     @keyframes blink {
       0%, 100% { opacity: 1; }
       50%      { opacity: 0; }
     }
+
     @media (prefers-color-scheme: dark) {
-      .type, .cursor { fill: #e6edf3; }
+      .char, .cursor { fill: #e6edf3; }
     }
   </style>
-  <text class="type" x="0" y="28">I am a...</text>
-  <text class="cursor" x="205" y="28">|</text>
+
+  <text class="char c1" x="0"   y="22">I</text>
+  <text class="char c2" x="14"  y="22"> </text>
+  <text class="char c3" x="22"  y="22">a</text>
+  <text class="char c4" x="36"  y="22">m</text>
+  <text class="char c5" x="58"  y="22"> </text>
+  <text class="char c6" x="66"  y="22">a</text>
+  <text class="char c7" x="80"  y="22">.</text>
+  <text class="char c8" x="88"  y="22">.</text>
+  <text class="char c9" x="96"  y="22">.</text>
+
+  <text class="cursor" x="112" y="22">|</text>
 </svg>
