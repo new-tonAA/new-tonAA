@@ -23,7 +23,6 @@
 
 <br>
 
-**I am a...**
 
 - Software Engineering undergraduate student at **South China University of Technology**
 - Undergraduate researcher interested in **Computer Vision and Multimodal AI**
