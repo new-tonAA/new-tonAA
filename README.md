@@ -13,19 +13,11 @@
   />
 </picture>
 
-<br>
-<br>
-
 <img
   src="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/typing.svg"
   alt="I am a..."
 />
 
-<br>
-
-
 - Software Engineering undergraduate student at **South China University of Technology**
 - Undergraduate researcher interested in **Computer Vision and Multimodal AI**
 - Game developer exploring **Game Development and Real-Time Rendering**
-
-<br>
