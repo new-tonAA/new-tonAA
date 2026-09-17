@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="520" height="40" viewBox="0 0 520 40">
+  <style>
+    .type {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+      font-size: 20px;
+      font-weight: 600;
+      fill: #24292f;
+      overflow: hidden;
+      white-space: nowrap;
+      width: 0;
+      animation: typing 2.5s steps(20, end) infinite;
+    }
+    .cursor {
+      font-family: monospace;
+      font-size: 20px;
+      fill: #24292f;
+      animation: blink 1s step-end infinite;
+    }
+    @keyframes typing {
+      0%   { width: 0; }
+      50%  { width: 200px; }
+      100% { width: 200px; }
+    }
+    @keyframes blink {
+      0%, 100% { opacity: 1; }
+      50%      { opacity: 0; }
+    }
+    @media (prefers-color-scheme: dark) {
+      .type, .cursor { fill: #e6edf3; }
+    }
+  </style>
+  <text class="type" x="0" y="28">I am a...</text>
+  <text class="cursor" x="205" y="28">|</text>
+</svg>
