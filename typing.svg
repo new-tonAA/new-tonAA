@@ -1,145 +1,46 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="520" height="30" viewBox="0 0 520 30">
-
-<style>
-
-.char {
-  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
-  font-size: 20px;
-  font-weight: 600;
-  fill: #24292f;
-  opacity: 0;
-  animation: typing 8s infinite;
-}
-
-.cursor {
-  font-family: monospace;
-  font-size: 20px;
-  font-weight: 600;
-  fill: #24292f;
-  animation: blink 1s step-end infinite;
-}
-
-
-/* 每个字符出现时间 */
-
-.c1 {
-  animation-delay:0s;
-}
-
-.c2 {
-  animation-delay:0.25s;
-}
-
-.c3 {
-  animation-delay:0.5s;
-}
-
-.c4 {
-  animation-delay:0.75s;
-}
-
-.c5 {
-  animation-delay:1s;
-}
-
-.c6 {
-  animation-delay:1.25s;
-}
-
-.c7 {
-  animation-delay:1.5s;
-}
-
-.c8 {
-  animation-delay:1.75s;
-}
-
-.c9 {
-  animation-delay:2s;
-}
-
-
-
-/* 字符出现后保持 */
-
-@keyframes typing {
-
-0% {
-  opacity:0;
-}
-
-10% {
-  opacity:1;
-}
-
-70% {
-  opacity:1;
-}
-
-85% {
-  opacity:0;
-}
-
-100% {
-  opacity:0;
-}
-
-
-}
-
-
-@keyframes blink {
-
-0%,100% {
- opacity:1;
-}
-
-50% {
- opacity:0;
-}
-
-}
-
-
-@media (prefers-color-scheme:dark){
-
-.char,
-.cursor {
-
-fill:#e6edf3;
-
-}
-
-}
-
-</style>
-
-
-
-<!-- I am a... -->
-
-<text class="char c1" x="0" y="22">I</text>
-
-<text class="char c2" x="14" y="22">&#160;</text>
-
-<text class="char c3" x="22" y="22">a</text>
-
-<text class="char c4" x="36" y="22">m</text>
-
-<text class="char c5" x="58" y="22">&#160;</text>
-
-<text class="char c6" x="66" y="22">a</text>
-
-<text class="char c7" x="80" y="22">.</text>
-
-<text class="char c8" x="88" y="22">.</text>
-
-<text class="char c9" x="96" y="22">.</text>
-
-
-<!-- cursor -->
-
-<text class="cursor" x="112" y="22">|</text>
-
-
+<svg xmlns="http://www.w3.org/2000/svg" width="260" height="30" viewBox="0 0 260 30">
+  <foreignObject width="260" height="30">
+    <div xmlns="http://www.w3.org/1999/xhtml" style="margin:0;padding:0;">
+      <style>
+        .wrap {
+          font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif;
+          font-size: 20px;
+          font-weight: 600;
+          color: #24292f;
+          display: inline-flex;
+          align-items: center;
+          height: 30px;
+        }
+        .text {
+          display: inline-block;
+          overflow: hidden;
+          white-space: nowrap;
+          border-right: 2px solid #24292f;
+          width: 0;
+          animation: typing 4s steps(9, end) infinite,
+                     blink 0.8s step-end infinite;
+        }
+        @keyframes typing {
+          0%   { width: 0; }
+          40%  { width: 9ch; }
+          60%  { width: 9ch; }
+          100% { width: 0; }
+        }
+        @keyframes blink {
+          0%, 100% { border-color: #24292f; }
+          50%      { border-color: transparent; }
+        }
+        @media (prefers-color-scheme: dark) {
+          .wrap, .text { color: #e6edf3; border-color: #e6edf3; }
+          @keyframes blink {
+            0%, 100% { border-color: #e6edf3; }
+            50%      { border-color: transparent; }
+          }
+        }
+      </style>
+      <div class="wrap">
+        <span class="text">I am a...</span>
+      </div>
+    </div>
+  </foreignObject>
 </svg>
