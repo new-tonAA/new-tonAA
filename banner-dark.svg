@@ -1,10 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="320" viewBox="0 0 1600 320" role="img" aria-label="new-tonAA — Computer Vision / Game Development / Real-Time Rendering">
+<svg xmlns="http://www.w3.org/2000/svg" width="1600" height="300" viewBox="0 0 1600 300" role="img" aria-label="new-tonAA — Computer Vision / Game Development / Real-Time Rendering">
   <title>new-tonAA</title>
   <defs>
-    <radialGradient id="glow" cx="0.5" cy="0.5" r="0.5">
-      <stop offset="0" stop-color="#60a5fa" stop-opacity="0.20"/>
-      <stop offset="1" stop-color="#60a5fa" stop-opacity="0"/>
-    </radialGradient>
     <radialGradient id="avBg" cx="0.35" cy="0.25" r="0.85">
       <stop offset="0" stop-color="#1d3550"/>
       <stop offset="1" stop-color="#0e2138"/>
@@ -34,9 +30,7 @@
 
     .spin  { animation: spin 38s linear infinite;  transform-origin: 190px 200px; }
     .spin2 { animation: spin 26s linear infinite reverse; transform-origin: 190px 200px; }
-    .pulse { animation: pulse 5.5s ease-in-out infinite; }
     @keyframes spin { to { transform: rotate(360deg); } }
-    @keyframes pulse { 0%, 100% { opacity: 0.30; } 50% { opacity: 0.62; } }
 
     .draw { stroke-dasharray: 400; stroke-dashoffset: 400; animation: draw 1.5s 0.9s ease-out forwards; }
     @keyframes draw { to { stroke-dashoffset: 0; } }
@@ -45,12 +39,10 @@
     @keyframes march { to { stroke-dashoffset: -320; } }
 
     @media (prefers-reduced-motion: reduce) {
-      .fade, .float, .spin, .spin2, .pulse, .draw, .march { animation: none !important; opacity: 1; stroke-dashoffset: 0; }
+      .fade, .float, .spin, .spin2, .draw, .march { animation: none !important; opacity: 1; stroke-dashoffset: 0; }
       .march { stroke-dasharray: none; }
     }
   </style>
-
-  <circle cx="190" cy="160" r="230" fill="url(#glow)" class="pulse"/>
 
   <!-- right ornament: wireframe cube -->
   <g opacity="0.30" stroke="#60a5fa" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round">
@@ -67,7 +59,7 @@
 
   <!-- avatar (drawn around y=200, shifted up 40 to sit in the shorter frame) -->
   <g class="float">
-    <g transform="translate(0,-40)">
+    <g transform="translate(0,-50)">
       <circle cx="190" cy="200" r="134" fill="none" stroke="#60a5fa" stroke-width="1.5" opacity="0.14" class="spin2" stroke-dasharray="1 18"/>
       <circle cx="190" cy="200" r="121" fill="none" stroke="#60a5fa" stroke-width="2" opacity="0.40" stroke-dasharray="3 12" class="spin"/>
       <g class="spin"><circle cx="190" cy="79" r="4.5" fill="#60a5fa"/></g>
@@ -123,14 +115,14 @@
     <text class="fade d3" x="360" y="226" font-size="24" letter-spacing="2" fill="#93a4bb">Computer Vision / Game Development / Real-Time Rendering</text>
 
     <g class="fade d4" font-size="23" letter-spacing="1" fill="#cbd5e1">
-      <path d="M 363,285 L 372,277 L 381,285 V 294 C 381,295.1 380.1,296 379,296 H 375 V 290 H 369 V 296 H 365 C 363.9,296 363,295.1 363,294 Z"
+      <path d="M 363,271 L 372,263 L 381,271 V 280 C 381,281.1 380.1,282 379,282 H 375 V 276 H 369 V 282 H 365 C 363.9,282 363,281.1 363,280 Z"
             fill="none" stroke="#3b82f6" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"/>
-      <text x="398" y="296">https://new-tonaa.github.io</text>
-      <line x1="790" y1="274" x2="790" y2="303" stroke="#93a4bb" stroke-width="1.5" opacity="0.45"/>
-      <g transform="translate(818,274)">
+      <text x="398" y="282">https://new-tonaa.github.io</text>
+      <line x1="790" y1="260" x2="790" y2="289" stroke="#93a4bb" stroke-width="1.5" opacity="0.45"/>
+      <g transform="translate(818,260)">
         <path d="M 12,1 C 5.9,1 1,5.9 1,12 C 1,16.9 4.2,21.1 8.6,22.5 C 9.2,22.6 9.4,22.3 9.4,21.9 L 9.4,20 C 6.3,20.7 5.6,18.6 5.6,18.6 C 5.1,17.2 4.3,16.9 4.3,16.9 C 3.2,16.2 4.3,16.2 4.3,16.2 C 5.5,16.3 6.1,17.4 6.1,17.4 C 7.2,19.3 9,18.8 9.5,18.4 C 9.6,17.6 10,17.1 10.4,16.8 C 7.9,16.5 5.3,15.6 5.3,11.4 C 5.3,10.2 5.7,9.2 6.1,8.4 C 6,8.1 5.6,7 6.2,5.3 C 6.2,5.3 7.2,5 9.4,6.5 C 10.4,6.2 11.4,6.1 12.4,6.1 C 13.4,6.1 14.4,6.2 15.4,6.5 C 17.6,5 18.6,5.3 18.6,5.3 C 19.2,7 18.8,8.1 18.7,8.4 C 19.1,9.2 19.5,10.2 19.5,11.4 C 19.5,15.6 16.9,16.5 14.4,16.8 C 14.9,17.2 15.3,17.9 15.3,19 L 15.3,21.9 C 15.3,22.3 15.5,22.6 16.1,22.5 C 20.5,21.1 23.7,16.9 23.7,12 C 23.7,5.9 18.8,1 12.7,1 Z" fill="#3b82f6"/>
       </g>
-      <text x="858" y="296">@new-tonAA</text>
+      <text x="858" y="282">@new-tonAA</text>
     </g>
   </g>
 </svg>
