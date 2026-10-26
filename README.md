@@ -41,10 +41,4 @@ mindmap
       C#
       GLSL / HLSL
       TypeScript
-    Tools
-      PyTorch
-      CUDA
-      Docker
-      Git
-      Linux
 ```
