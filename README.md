@@ -1,8 +1,8 @@
 <p align="center">
   <picture>
-    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/img2.png" />
-    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/img1.png" />
-    <img alt="new-tonAA profile" src="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/img1.png"/>
+    <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/banner-dark.svg" />
+    <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/banner-light.svg" />
+    <img alt="new-tonAA profile" src="https://raw.githubusercontent.com/new-tonAA/new-tonAA/main/banner-light.svg"/>
   </picture>
 </p>
 
